@@ -1,0 +1,26 @@
+#+TITLE: dot emacs
+
+* Examples/Inspiration
+
+- [[http://pages.sachachua.com/.emacs.d/Sacha.html]]
+
+* Starting up
+
+#+BEGIN_SRC elisp :tangle yes
+(package-initialize)
+#+END_SRC
+
+* Personal information
+
+#+BEGIN_SRC elisp :tangle yes
+(setq user-full-name "Stefan Bischof"
+      user-mail-address "stefan@stefanbischof.at")
+#+END_SRC
+
+* Package sources
+
+#+BEGIN_SRC elisp :tangle yes
+(require 'package) ;; You might already have this line
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+#+END_SRC
