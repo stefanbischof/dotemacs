@@ -32,8 +32,8 @@ Maybe we can simplify the process by tangling automatically like here [[https://
   (define-key global-map "\C-cc" 'org-capture)
   (setq org-src-fontify-natively t
         org-agenda-files (list "~/git/personal/siemens.org"
-                                 "~/git/personal/phd.org" 
-                                 "~/git/personal/private.org"))
+                               "~/git/personal/phd.org" 
+                               "~/git/personal/private.org"))
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((sparql . t)))
