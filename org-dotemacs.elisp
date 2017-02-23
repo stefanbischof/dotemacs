@@ -100,3 +100,6 @@ PRIORITY may be one of the characters ?A, ?B, or ?C."
 (tool-bar-mode -1)
                                         ;(require 'smart-mode-line)
 (powerline-default-theme)
+
+(require 'epa-file)
+(epa-file-enable)

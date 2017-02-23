@@ -128,3 +128,8 @@ Maybe we can simplify the process by tangling automatically like here [[https://
                                           ;(require 'smart-mode-line)
   (powerline-default-theme)
 #+END_SRC
+* Encryption
+#+BEGIN_SRC elisp :tangle yes
+  (require 'epa-file)
+  (epa-file-enable)
+#+END_SRC
