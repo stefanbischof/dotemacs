@@ -90,7 +90,7 @@ Maybe we can simplify the process by tangling automatically like here [[https://
   (progn
       (setq org-capture-templates
        '(("t" "TODO" entry (file+headline "d:/emacs/siemens.org" "Inbox")
-            "* TODO %?\n  %i")
+            "* TODO %?\nEntered on %U\n  %i")
          ("j" "Journal" entry (file+datetree "d:/emacs/journal.org")
     "* %?\nEntered on %U\n  %i\n  %a"))))
 #+END_SRC
