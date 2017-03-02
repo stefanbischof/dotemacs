@@ -43,6 +43,10 @@ Maybe we can simplify the process by tangling automatically like here [[https://
           ("private.org" :maxlevel . 1)
           ("siemens.org" :maxlevel . 1)))
 #+END_SRC
+Count all the TODOs in the subtree not only (direct) children:
+#+BEGIN_SRC elisp :tangle yes
+  (setq org-hierarchical-todo-statistics nil)
+#+END_SRC
 ** keymap
 #+BEGIN_SRC elisp :tangle yes
   (global-set-key "\C-cl" 'org-store-link)
