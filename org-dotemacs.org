@@ -94,11 +94,19 @@ Count all the TODOs in the subtree not only (direct) children:
   (progn
       (setq org-capture-templates
        '(("t" "TODO" entry (file+headline "d:/emacs/siemens.org" "Inbox")
-            "* TODO %?\nEntered on %U\n  %i")
-         ("j" "Journal" entry (file+datetree "d:/emacs/journal.org")
-    "* %?\nEntered on %U\n  %i\n  %a"))))
+          "* TODO %?\nEntered on %U\n  %i")
+	 ("l" "Link" entry (file+olp "d:/emacs/journal.org" "Web Links")
+          "* %a\n %?\n %i")
+	 ("j" "Journal" entry (file+datetree "d:/emacs/journal.org")
+          "* %?\nEntered on %U\n  %i\n  %a"))))
 #+END_SRC
 ** TODO link the org files from windows
+** org protocol
+#+BEGIN_SRC elisp :tangle yes
+  (server-start)
+  (add-to-list 'load-path "d:/emacs/journal.org")
+  (require 'org-protocol)
+#+END_SRC
 * Auctex
 #+BEGIN_SRC elisp :tangle yes
   (when (memq window-system '(mac ns))
