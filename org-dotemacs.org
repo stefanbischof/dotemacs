@@ -30,6 +30,8 @@ Maybe we can simplify the process by tangling automatically like here [[https://
         org-agenda-files (list "~/git/personal/siemens.org"
                                "~/git/personal/phd.org" 
                                "~/git/personal/private.org"))
+  (require 'sparql-mode)
+			       
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((python . t) (emacs-lisp . t) (sparql . t)))
