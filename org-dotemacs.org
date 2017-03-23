@@ -133,7 +133,7 @@ Count all the TODOs in the subtree not only (direct) children:
 * Appearance
 #+BEGIN_SRC elisp :tangle yes
   ;; font size
-  (set-face-attribute 'default nil :height 120)
+  (set-face-attribute 'default nil :height 100)
   ;; line spacing
   (setq-default line-spacing 2)
   (add-hook 'org-mode-hook 'turn-on-visual-line-mode)
