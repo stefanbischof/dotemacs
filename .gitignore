@@ -5,3 +5,6 @@
 .cask
 elpa/
 *~
+\#org-dotemacs.el\#
+init.el
+org-dotemacs.el
